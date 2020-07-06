@@ -59,4 +59,3 @@ arreglo.forEach((ele)=>{
 	document.write("-->" +ele);
 });
 
-
