@@ -24,5 +24,5 @@ function CalMen (Pres, Periodo, TasaMensual)
 }
 
 //CalMen(Prestamo,Tiempo,Tasa);
-CalMen(30000000,60,1);
+CalMen(50000,60,1.38);
 console.log(Resultado);
