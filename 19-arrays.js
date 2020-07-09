@@ -59,3 +59,8 @@ arreglo.forEach((ele)=>{
 	document.write("-->" +ele);
 });
 
+for(let index in arreglo)
+{
+	console.log(arreglo[index]);
+}
+
