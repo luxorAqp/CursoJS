@@ -2,38 +2,30 @@
 alert("EJERCICIO ARRAYS");
 
 var CanNum = parseInt(prompt("Cuantos  valores tendra el ARRAY"));
-var Arreglo =[];
+var array =[];
 
-function LlenarArreglo(arreglo,CanDat)
+function LlenarArreglo(arreglo,CanDat,FunctionConsole,FunctionWeb)
 {
-	for (var i = 0; i <= CanDat; i++) 
+	for (var i = 0; i < CanDat; i++) 
 	{
-		arreglo[i]= parseInt(prompt("Ingrese numero"));
+		arreglo[i]= parseInt(prompt("Ingrese numero"));	
+		FunctionConsole(arreglo[i]);
+		FunctionWeb(arreglo[i]);
 		
-	}
+	}	
+
+
 
 	
-	return arreglo;
-
 }
 
-function MostrarArregloConsola(LlenarArreglo)
-{
-	console.log(LlenarArreglo);
-
-
-}
-function MostrarArregloPantalla(LlenarArreglo)
-{
-	document.write("<H1>" +"ARREGLO"+ "</H1>");
-
-
-}
-
-console.log();
-LlenarArreglo(Arreglo,CanNum);
-//MostrarArregloConsola(LlenarArreglo(Arreglo,CanNum));
-
-//MostrarArregloPantalla(LlenarArreglo(Arreglo,CanNum));
+LlenarArreglo(array,CanNum, function(arreglo2)
+	{
+		console.log(arreglo2+"xxx");
+	},
+	function(arreglo2)
+	{
+		document.write(arreglo2);
+	});
 
 
